@@ -26,12 +26,13 @@ nnoremap <C-k> <C-y>
 nnoremap <C-j> <C-e>
 
 " setear , + n para abrir arbol de archivos (modo normal e insertar)
-inoremap <leader>n <ESC>:NERDTree<CR>
-nnoremap <leader>n <ESC>:NERDTree<CR>
+inoremap <leader>n <ESC>:NERDTreeToggle<CR>
+nnoremap <leader>n <ESC>:NERDTreeToggle<CR>
 
 " guardar el archivo actual
-inoremap <C-s> <ESC>:w<CR>
-nnoremap <C-s> :w<CR>
+execute "set <M-s>=\es"
+inoremap <M-s> <ESC>:w<CR>
+nnoremap <M-s> :w<CR>
 
 " subir el cursor 8 lineas arriba
 nnoremap <S-k> 8k
@@ -41,3 +42,10 @@ nnoremap <S-j> 8j
 
 " cambiar a modo normal cuando estoy en insertar con kk
 inoremap kk <Esc>
+
+" salir de la terminal cuando estemos en modo terminal
+tnoremap <Esc> <C-\><C-n>
+
+" salir del archivo actual
+nnoremap <leader>q :q<CR>
+inoremap <leader>q <ESC>:q<CR>
