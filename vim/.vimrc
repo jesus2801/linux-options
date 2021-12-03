@@ -41,6 +41,7 @@ set shiftwidth=2
 set mouse=a
 " enable the title
 set title
+set titlestring=\ %-25.55F\ %a%r%m titlelen=90
 
 " search options
 set hlsearch

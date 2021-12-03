@@ -49,7 +49,7 @@ if __name__ == '__main__':
         if(incrementCount()):
             os.system(generateCommand('¡Conecta el cargador!'))
     else:
-        os.system('cat /dev/null > temp.txt')
+        os.system('cat /dev/null >| ' + APP_PATH + '/temp.txt')
 else:
     print("The name is not __main__")
     print("The name is: " + __name__)

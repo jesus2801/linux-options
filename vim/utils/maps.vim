@@ -30,9 +30,8 @@ inoremap <leader>n <ESC>:NERDTreeToggle<CR>
 nnoremap <leader>n <ESC>:NERDTreeToggle<CR>
 
 " guardar el archivo actual
-execute "set <M-s>=\es"
-inoremap <M-s> <ESC>:w<CR>
-nnoremap <M-s> :w<CR>
+inoremap <leader>s <ESC>:w<CR>
+nnoremap <leader>s :w<CR>
 
 " subir el cursor 8 lineas arriba
 nnoremap <S-k> 8k
@@ -49,3 +48,6 @@ tnoremap <Esc> <C-\><C-n>
 " salir del archivo actual
 nnoremap <leader>q :q<CR>
 inoremap <leader>q <ESC>:q<CR>
+
+nmap <leader>d <C-^><CR>
+nmap <leader>f :Files<CR>
