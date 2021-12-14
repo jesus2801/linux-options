@@ -21,8 +21,11 @@ Plug 'junegunn/fzf.vim'
 Plug 'mattn/emmet-vim'
 Plug 'terryma/vim-multiple-cursors'
 
+Plug 'prettier/vim-prettier', { 'do': 'npm install --frozen-lockfile --production' }
+
 call plug#end()
 
+" lightline configuration
 let g:lightline = {
       \ 'component_function': {
       \   'filename': 'LightlineFilename',

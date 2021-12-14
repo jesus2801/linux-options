@@ -27,7 +27,11 @@ nnoremap <C-j> <C-e>
 
 " setear , + n para abrir arbol de archivos (modo normal e insertar)
 inoremap <leader>n <ESC>:NERDTreeToggle<CR>
-nnoremap <leader>n <ESC>:NERDTreeToggle<CR>
+nnoremap <leader>n :NERDTreeToggle<CR>
+
+" moverse entre ventanas
+inoremap <leader>w <ESC><C-w>w
+nnoremap <leader>w <C-w>w
 
 " guardar el archivo actual
 inoremap <leader>s <ESC>:w<CR>
@@ -49,5 +53,14 @@ tnoremap <Esc> <C-\><C-n>
 nnoremap <leader>q :q<CR>
 inoremap <leader>q <ESC>:q<CR>
 
-nmap <leader>d <C-^><CR>
+" ir al archivo anterior
+nmap <leader>d ,s<C-^><CR>
+" abrir el explorador de arhivos
 nmap <leader>f :Files<CR>
+
+" para utilizar emmet
+imap <leader>j <C-y>,
+
+" buscar palabras en los archivos
+nnoremap <leader>g :Ag<CR>
+inoremap <leader>g <ESC>:Ag<CR>
