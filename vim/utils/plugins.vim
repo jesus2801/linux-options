@@ -31,3 +31,6 @@ let g:lightline = {
       \   'filename': 'LightlineFilename',
       \ }
       \ }
+
+" nerd tree configuration
+let g:NERDTreeWinSize=48

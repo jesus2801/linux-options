@@ -54,9 +54,12 @@ nnoremap <leader>q :q<CR>
 inoremap <leader>q <ESC>:q<CR>
 
 " ir al archivo anterior
-nmap <leader>d ,s<C-^><CR>
+nnoremap <leader>d <C-^><CR>
+inoremap <leader>d <ESC><C-^><CR>
+
 " abrir el explorador de arhivos
-nmap <leader>f :Files<CR>
+nnoremap <leader>f :Files<CR>
+inoremap <leader>f <ESC>:Files<CR>
 
 " para utilizar emmet
 imap <leader>j <C-y>,
@@ -64,3 +67,27 @@ imap <leader>j <C-y>,
 " buscar palabras en los archivos
 nnoremap <leader>g :Ag<CR>
 inoremap <leader>g <ESC>:Ag<CR>
+
+" abrir nerd tree en el archivo actual
+nnoremap <leader>m :NERDTreeFind<CR>
+inoremap <leader>m <ESC>:NERDTreeFind<CR>
+
+" recargar configuración
+nnoremap <leader>r :source ~/.vimrc<CR>
+inoremap <leader>r <ESC>:source ~/.vimrc<CR>
+
+" duplicar linea hacia abajo 
+nnoremap <C-S-j> yyp
+inoremap <C-S-j> <ESC>yyp
+
+" duplicar linea hacia arriba
+nnoremap <C-S-k> yykp
+inoremap <C-S-k> <ESC>yykp
+
+" abrir historial de archivos
+nnoremap <leader>h :Buffer<CR>
+inoremap <leader>h <ESC>:Buffer<CR>
+
+" limpiar todos los buffers activos
+nnoremap <leader>c :bufdo bd<CR>
+inoremap <leader>c <ESC>:bufdo bd<CR>

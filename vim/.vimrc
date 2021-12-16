@@ -25,10 +25,11 @@ set number
 " set relativenumber for more comodity
 set relativenumber
 " can copy and paste from the clopboard
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 " for highlight the matches
 set showmatch
+highlight MatchParen ctermfg=red
 
 set autoindent
 filetype indent on

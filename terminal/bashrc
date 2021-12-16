@@ -1,0 +1,22 @@
+tmux has-session -t development
+if [ $? != 0 ]
+then
+  tmux new-session -s development
+fi
+tmux attach -t development
+
+PS1="\e[0;34m\u\e[0m\e[0;34m@\e[0m\e[0;31m\w\e[0m \e[0;34m~$\e[0m "
+cd Escritorio/
+free -m
+
+alias cdopt="cd ~/options"
+alias cdesk="cd ~/Escritorio"
+
+alias clientenglish="npm --prefix ~/Escritorio/programming/english-assistant/client/ run dev"
+alias serverenglish="npm --prefix ~/Escritorio/programming/english-assistant/server/ start"
+
+alias bi="ssh jesus@bicyt.xyz"
+
+export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*,.next/*,out/,dist/}"'
+
+echo "aliases loaded"

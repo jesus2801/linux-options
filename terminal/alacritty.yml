@@ -31,3 +31,6 @@ font:
 
 window:
   startup_mode: Maximized
+
+env:
+  TERM: xterm-256color
