@@ -26,3 +26,6 @@ chrome: https://www.google.com/chrome/?platform=linux
 neovim: https://github.com/neovim/neovim/wiki/Installing-Neovim#linux
 obs: https://obsproject.com/wiki/install-instructions#linux
 zoom: https://support.zoom.us/hc/es/articles/204206269-Instalaci%C3%B3n-o-actualizaci%C3%B3n-de-Zoom-en-Linux#h_adcc0b66-b2f4-468b-bc7a-12c182f354b7
+spotify: https://www.spotify.com/co/download/linux/
+mysql-workbench: https://dev.mysql.com/downloads/workbench/
+virtual-box: https://www.virtualbox.org/wiki/Downloads
