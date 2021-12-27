@@ -11,6 +11,9 @@ free -m
 
 alias cdopt="cd ~/options"
 alias cdesk="cd ~/Escritorio"
+alias cdoc="cd ~/Documentos"
+alias cdimg="cd ~/Imágenes"
+alias cdownloads="cd ~/Descargas"
 
 alias clientenglish="npm --prefix ~/Escritorio/programming/english-assistant/client/ run dev"
 alias serverenglish="npm --prefix ~/Escritorio/programming/english-assistant/server/ start"
@@ -19,6 +22,7 @@ alias bi="ssh jesus@bicyt.xyz"
 alias cdash="cd ~/Escritorio/work/dashboards"
 
 alias e="exit"
+alias ..="cd .."
 
 echo "aliases loaded"
 

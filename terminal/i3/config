@@ -241,7 +241,7 @@ set $m1 "eDP-1"
 set $m2 "HDMI-1"
 
 # background image
-exec --no-startup-id feh --bg-fill ~/Documentos/wallpaper.jpg
+exec --no-startup-id feh --bg-fill ~/options/images/wallpaper.jpg
 # startup programs
 exec --no-startup-id i3-msg 'workspace 2; exec google-chrome; exec todoist'
 # redshit
