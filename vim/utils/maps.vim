@@ -2,13 +2,13 @@
 let mapleader = ","
 
 " setear alt + j como <M-j>
-execute "set <M-j>=\ej"
+execute "set <M-k>=\ek"
 
 " moverse hacia arriba
 nnoremap <M-k> :move -2<CR>
 
 " setear alt + k como <M-k>
-execute "set <M-k>=\ek"
+execute "set <M-j>=\ej"
 
 " moverse hacia abajo
 nnoremap <M-j> :move +1<CR>
@@ -91,3 +91,6 @@ inoremap <leader>h <ESC>:Buffer<CR>
 " limpiar todos los buffers activos
 nnoremap <leader>c :bufdo bd<CR>
 inoremap <leader>c <ESC>:bufdo bd<CR>
+
+" mover linea havia arriba
+nnoremap 

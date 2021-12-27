@@ -16,7 +16,10 @@ alias clientenglish="npm --prefix ~/Escritorio/programming/english-assistant/cli
 alias serverenglish="npm --prefix ~/Escritorio/programming/english-assistant/server/ start"
 
 alias bi="ssh jesus@bicyt.xyz"
+alias cdash="cd ~/Escritorio/work/dashboards"
 
-export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*,.next/*,out/,dist/}"'
+alias e="exit"
 
 echo "aliases loaded"
+
+export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*,.next/*,out/,dist/}"'
