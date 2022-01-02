@@ -246,6 +246,8 @@ exec --no-startup-id feh --bg-fill ~/options/images/wallpaper.jpg
 exec --no-startup-id i3-msg 'workspace 2; exec google-chrome; exec todoist'
 # redshit
 exec redshift
+# for layout
+exec python3 ~/options/terminal/i3/layout.py
 
 # change workspaces
 bindsym $mod+Shift+p workspace 2, move workspace to output $m2, workspace 1, move workspace to output $m1
@@ -255,6 +257,11 @@ bindsym $mod+p workspace 2, move workspace to output $m1, workspace 1, move work
 for_window [class="^.*"] border pixel 4
 gaps inner 2
 gaps outer 2
+
+#know title
+bindsym $mod+g exec --no-startup-id python3 ~/options/terminal/i3/title.py
+
+for_window [title="^Shutter$"] floating enable
 
 # open programs by shortcuts
 # open new terminal
@@ -267,3 +274,9 @@ bindsym $mod+Shift+o exec google-chrome
 bindsym $mod+Shift+a exec anki
 # open todoist
 bindsym $mod+t exec todoist
+# open shutter in selection mode
+bindsym $mod+Shift+s exec shutter -s
+
+
+# create new workspace
+bindsym $mod+Shift+w exec --no-startup-id ~/options/terminal/i3/new-workspace
