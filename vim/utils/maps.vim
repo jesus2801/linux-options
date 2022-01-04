@@ -1,29 +1,17 @@
 " setear mapleader como ,
 let mapleader = ","
 
-" setear alt + j como <M-j>
-execute "set <M-k>=\ek"
-
 " moverse hacia arriba
-nnoremap <M-k> :move -2<CR>
-
-" setear alt + k como <M-k>
-execute "set <M-j>=\ej"
+nnoremap <C-S-k> :move -2<CR>
 
 " moverse hacia abajo
-nnoremap <M-j> :move +1<CR>
+nnoremap <C-S-j> :move +1<CR>
 
 " setear , + l para colocar ; la final
 inoremap <leader>l <ESC>A;
 
 " setear Ctrl + l para ir al final
 inoremap <C-l> <ESC>A
-
-" setear Ctrl + k para subir pantalla
-nnoremap <C-k> <C-y>
-
-" setear Ctrl + j para bajar pantalla
-nnoremap <C-j> <C-e>
 
 " setear , + n para abrir arbol de archivos (modo normal e insertar)
 inoremap <leader>n <ESC>:NERDTreeToggle<CR>
@@ -77,12 +65,12 @@ nnoremap <leader>r :source ~/.vimrc<CR>
 inoremap <leader>r <ESC>:source ~/.vimrc<CR>
 
 " duplicar linea hacia abajo 
-nnoremap <C-S-j> yyp
-inoremap <C-S-j> <ESC>yyp
+nnoremap <leader>j yyp
+inoremap <leader>j <ESC>yyp
 
 " duplicar linea hacia arriba
-nnoremap <C-S-k> yykp
-inoremap <C-S-k> <ESC>yykp
+nnoremap <leader>k yykp
+inoremap <leader>k <ESC>yykp
 
 " abrir historial de archivos
 nnoremap <leader>h :Buffer<CR>
@@ -93,4 +81,9 @@ nnoremap <leader>c :bufdo bd<CR>
 inoremap <leader>c <ESC>:bufdo bd<CR>
 
 " mover linea havia arriba
-nnoremap 
+nnoremap <leader>b i{/*  */}<ESC>hhhi
+inoremap <leader>b {/*  */}<ESC>hhhi
+
+" dividir verticalmente
+nnoremap <leader>v :vsplit<CR>
+inoremap <leader>v <ESC>:vsplit<CR>

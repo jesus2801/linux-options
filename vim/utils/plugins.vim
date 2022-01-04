@@ -10,6 +10,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 
 Plug 'sirver/ultisnips'
+Plugin 'honza/vim-snippets'
 Plug 'mhinz/vim-signify'
 Plug 'yggdroot/indentline'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

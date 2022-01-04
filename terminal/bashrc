@@ -27,6 +27,7 @@ alias cdownloads="cd ~/Descargas"
 
 alias clientenglish="npm --prefix ~/Escritorio/programming/english-assistant/client/ run dev"
 alias serverenglish="npm --prefix ~/Escritorio/programming/english-assistant/server/ start"
+alias cdash="cd ~/Escritorio/work/dashboards"
 
 alias c="clear"
 
