@@ -29,3 +29,4 @@ zoom: https://support.zoom.us/hc/es/articles/204206269-Instalaci%C3%B3n-o-actual
 spotify: https://www.spotify.com/co/download/linux/
 mysql-workbench: https://dev.mysql.com/downloads/workbench/
 virtual-box: https://www.virtualbox.org/wiki/Downloads
+alacritty: https://ubunlog.com/alacritty-emulador-terminal-rapido-simple/

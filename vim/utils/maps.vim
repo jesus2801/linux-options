@@ -50,7 +50,7 @@ nnoremap <leader>f :Files<CR>
 inoremap <leader>f <ESC>:Files<CR>
 
 " para utilizar emmet
-imap <leader>j <C-y>,
+imap <leader>e <C-y>,
 
 " buscar palabras en los archivos
 nnoremap <leader>g :Ag<CR>

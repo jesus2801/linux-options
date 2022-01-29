@@ -9,6 +9,9 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+# setup monitors
+exec --no-startup-id python3 ~/options/terminal/i3/monitor.py
+
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -240,14 +243,13 @@ bindsym $mod+q mode "$mode_system"
 set $m1 "eDP-1"
 set $m2 "HDMI-1"
 
-# background image
-exec --no-startup-id feh --bg-fill ~/options/images/wallpaper.jpg
 # startup programs
 exec --no-startup-id i3-msg 'workspace 2; exec google-chrome; exec todoist'
-# redshit
-exec redshift
+# set brightness to 70 percent and start redshift
+exec --no-startup-id xrandr --output eDP-1 --brightness 0.63 && redshift -m randr:crtc=0 -O 2400
+exec --no-startup-id redshift -m randr:crtc=1 -O 2600
 # for layout
-exec python3 ~/options/terminal/i3/layout.py
+exec --no-startup-id python3 ~/options/terminal/i3/layout.py
 
 # change workspaces
 bindsym $mod+Shift+p workspace 2, move workspace to output $m2, workspace 1, move workspace to output $m1
@@ -276,6 +278,5 @@ bindsym $mod+Shift+a exec anki
 bindsym $mod+t exec todoist
 # open shutter in selection mode
 bindsym $mod+Shift+s exec shutter -s
-
 # create new workspace
 bindsym $mod+Shift+w exec --no-startup-id ~/options/terminal/i3/new-workspace
