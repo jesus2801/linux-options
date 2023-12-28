@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+cp ~/linux-options/terminal/cpp/template.cpp $(pwd)/$1.cpp

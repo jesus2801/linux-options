@@ -14,8 +14,8 @@ inoremap <leader>l <ESC>A;
 inoremap <C-l> <ESC>A
 
 " setear , + n para abrir arbol de archivos (modo normal e insertar)
-inoremap <leader>n <ESC>:NERDTreeToggle<CR>
-nnoremap <leader>n :NERDTreeToggle<CR>
+"inoremap <leader>n <ESC>:NERDTreeToggle<CR>
+"nnoremap <leader>n :NERDTreeToggle<CR>
 
 " moverse entre ventanas
 inoremap <leader>w <ESC><C-w>w
@@ -46,23 +46,23 @@ nnoremap <leader>d <C-^><CR>
 inoremap <leader>d <ESC><C-^><CR>
 
 " abrir el explorador de arhivos
-nnoremap <leader>f :Files<CR>
-inoremap <leader>f <ESC>:Files<CR>
+"nnoremap <leader>f :Files<CR>
+"inoremap <leader>f <ESC>:Files<CR>
 
 " para utilizar emmet
-imap <leader>e <C-y>,
+"imap <leader>e <C-y>,
 
 " buscar palabras en los archivos
-nnoremap <leader>g :Ag<CR>
-inoremap <leader>g <ESC>:Ag<CR>
+"nnoremap <leader>g :Ag<CR>
+"inoremap <leader>g <ESC>:Ag<CR>
 
 " abrir nerd tree en el archivo actual
-nnoremap <leader>m :NERDTreeFind<CR>
-inoremap <leader>m <ESC>:NERDTreeFind<CR>
+"nnoremap <leader>m :NERDTreeFind<CR>
+"inoremap <leader>m <ESC>:NERDTreeFind<CR>
 
 " recargar configuración
-nnoremap <leader>r :source ~/.vimrc<CR>
-inoremap <leader>r <ESC>:source ~/.vimrc<CR>
+"nnoremap <leader>r :source ~/.vimrc<CR>
+"inoremap <leader>r <ESC>:source ~/.vimrc<CR>
 
 " duplicar linea hacia abajo 
 nnoremap <leader>j yyp
@@ -73,16 +73,16 @@ nnoremap <leader>k yykp
 inoremap <leader>k <ESC>yykp
 
 " abrir historial de archivos
-nnoremap <leader>h :Buffer<CR>
-inoremap <leader>h <ESC>:Buffer<CR>
+"nnoremap <leader>h :Buffer<CR>
+"inoremap <leader>h <ESC>:Buffer<CR>
 
 " limpiar todos los buffers activos
-nnoremap <leader>c :bufdo bd<CR>
-inoremap <leader>c <ESC>:bufdo bd<CR>
+"nnoremap <leader>c :bufdo bd<CR>
+"inoremap <leader>c <ESC>:bufdo bd<CR>
 
 " mover linea havia arriba
-nnoremap <leader>b i{/*  */}<ESC>hhhi
-inoremap <leader>b {/*  */}<ESC>hhhi
+"nnoremap <leader>b i{/*  */}<ESC>hhhi
+"inoremap <leader>b {/*  */}<ESC>hhhi
 
 " dividir verticalmente
 nnoremap <leader>v :vsplit<CR>

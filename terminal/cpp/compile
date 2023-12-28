@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+if [[ $2 == --only ]]; then
+  /usr/bin/clang++-10 -g -std=c++20 $(pwd)/$1 -o $(pwd)/out
+else
+  /usr/bin/clang++-10 -g -std=c++20 $(pwd)/$1 -o $(pwd)/out
+  $(pwd)/out
+  rm $(pwd)/out
+fi
