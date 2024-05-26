@@ -5,4 +5,6 @@ result = subprocess.check_output(["xrandr |grep ' connected' |grep 'HDMI-1' |awk
 
 if (result == 'HDMI-1'):
     os.system('xrandr --output HDMI-1 --primary --left-of eDP-1')
-    #os.system('feh --bg-fill ~/options/images/wallpaper.jpg')
+    os.system('feh --bg-fill ~/linux-options/images/neonCity.png')
+
+os.system('xrandr --output eDP-1 --brightness 1')
