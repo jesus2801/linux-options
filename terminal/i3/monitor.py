@@ -1,10 +1,16 @@
 import subprocess
 import os
 
-result = subprocess.check_output(["xrandr |grep ' connected' |grep 'HDMI-1' |awk '{print $1}'"], shell=True).decode('utf-8').strip()
+result = (
+    subprocess.check_output(
+        ["xrandr | grep ' connected' | grep 'HDMI-1' | awk '{print $1}'"], shell=True
+    )
+    .decode("utf-8")
+    .strip()
+)
 
-if (result == 'HDMI-1'):
-    os.system('xrandr --output HDMI-1 --primary --left-of eDP-1')
-    os.system('feh --bg-fill ~/linux-options/images/neonCity.png')
+if result == "HDMI-1":
+    os.system("xrandr --output HDMI-1 --primary --left-of eDP-1")
 
-os.system('xrandr --output eDP-1 --brightness 1')
+os.system("feh --bg-fill ~/linux-options/images/masterpiece.png")
+os.system("xrandr --output eDP-1 --brightness 1")

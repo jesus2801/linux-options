@@ -62,6 +62,7 @@ bindsym $mod+p kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id dmenu_run
+
 # A more modern dmenu replacement is rofi:
 bindsym $mod+bracketleft exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -93,12 +94,11 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-# TODO ver cómo se hace esto
-bindsym $mod+ntilde split h
+bindsym $mod+Shift+h split h
 
 # split in vertical orientation
-# TODO ver cómo funciona esto
-bindsym $mod+v split v
+# TODO: this does not work :(
+bindsym $mod+Shift+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+o fullscreen toggle
@@ -121,7 +121,6 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # move the currently focused window to the scratchpad
-# TODO: investigar qué es esto
 bindsym $mod+Shift+minus move scratchpad
 
 # Show the next scratchpad window or hide the focused scratchpad window.
@@ -133,9 +132,6 @@ bindsym $mod+x exec ~/.config/scripts/lock
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-#set $ws1 "1: Chill"
-#set $ws2 "2: Terminal"
-#set $ws3 "3: Work"
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
@@ -226,7 +222,6 @@ bar {
         #tray_output none
 }
 
-# for shut down the pc 
 set $Locker ~/.config/scripts/lock && sleep 1
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
@@ -244,8 +239,6 @@ mode "$mode_system" {
 }
 
 bindsym $mod+q mode "$mode_system"
-
-#exec --no-startup-id i3-msg 'workspace '$ws1 '; exec google-chrome'
 
 # handles when creating and closing new windows in a pretty way
 exec --no-startup-id "python3 ~/linux-options/terminal/i3/layout.py"
