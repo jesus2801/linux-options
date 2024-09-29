@@ -13,3 +13,5 @@ alias t="task report1"
 
 # nvim PATH
 export PATH="/opt/nvim-linux64/bin:$PATH"
+alias nv="/opt/nvim-linux64/bin/nvim"
+

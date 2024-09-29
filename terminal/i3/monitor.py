@@ -9,7 +9,10 @@ result = (
     .strip()
 )
 
+os.system("redshift -m randr:crtc=0 -O 4000")
+
 if result == "HDMI-1":
+    os.system("redshift -m randr:crtc=1 -O 4000")
     os.system("xrandr --output HDMI-1 --primary --left-of eDP-1")
 
 os.system("feh --bg-fill ~/linux-options/images/masterpiece.png")
