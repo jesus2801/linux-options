@@ -11,12 +11,33 @@ result = (
     .strip()
 )
 
+status = ""
+with open("/redshift.status", "r") as file:
+    status = file.read().strip()
+    print(status)
+
 now = datetime.datetime.now()
 
-if now.hour >= 18:
+if now.hour >= 18 or now.hour <= 6:
+    if status == "disabled":
+        os.system("redshift -x")
+        time.sleep(1)
+        os.system("redshift -m randr:crtc=0 -O 2400")
+
+        if result == "HDMI-1":
+            os.system("redshift -m randr:crtc=1 -O 2400")
+
+        status = "enabled"
+elif status == "enabled":
     os.system("redshift -x")
     time.sleep(1)
-    os.system("redshift -m randr:crtc=0 -O 2400")
+
+    os.system("redshift -m randr:crtc=0 -O 4000")
 
     if result == "HDMI-1":
-        os.system("redshift -m randr:crtc=1 -O 2400")
+        os.system("redshift -m randr:crtc=1 -O 4000")
+
+    status = "disabled"
+
+with open("/redshift.status", "w") as file:
+    file.write(status)
