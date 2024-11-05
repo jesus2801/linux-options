@@ -3,7 +3,7 @@ alias compile="~/linux-options/terminal/cpp/compile"
 alias nf="~/linux-options/terminal/cpp/cpp_template"
 
 # useful aliases
-alias py="python3.10"
+alias py="python3"
 alias ..="cd .."
 alias c="clear"
 alias o="nautilus . &"
