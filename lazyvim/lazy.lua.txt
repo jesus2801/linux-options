@@ -1,0 +1,26 @@
+    { import = "lazyvim.plugins.extras.lang.python" },
+    { import = "lazyvim.plugins.extras.lang.docker" },
+    { import = "lazyvim.plugins.extras.lang.git" },
+    { import = "lazyvim.plugins.extras.lang.java" },
+    { import = "lazyvim.plugins.extras.lang.json" },
+    { import = "lazyvim.plugins.extras.lang.markdown" },
+    { import = "lazyvim.plugins.extras.lang.typescript" },
+    { import = "lazyvim.plugins.extras.formatting.black" },
+    {
+      "nvim-lua/plenary.nvim",
+    },
+    {
+      "folke/todo-comments.nvim",
+      dependencies = { "nvim-lua/plenary.nvim" },
+    },
+    {
+      "nvim-treesitter/nvim-treesitter",
+      opts = { ensure_installed = { "cpp" } },
+    },
+    { "akinsho/toggleterm.nvim", version = "*", config = true },
+    {
+      "dnlhc/glance.nvim",
+      cmd = "Glance",
+    },
+    { "saecki/live-rename.nvim" },
+    { "chrisgrieser/nvim-spider", lazy = true },
