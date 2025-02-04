@@ -15,3 +15,5 @@ vim.keymap.set({ "i" }, "kk", "<ESC>")
 --vim.keymap.set("n", "<C-j>", "8j")
 
 vim.keymap.set("n", "cc", ":bd<CR>")
+
+vim.keymap.set("n", "<leader>cp", ":Copilot panel<CR>", { silent = true, noremap = true, desc = "Toggle Copilot" })

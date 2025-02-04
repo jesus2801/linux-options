@@ -24,3 +24,9 @@
     },
     { "saecki/live-rename.nvim" },
     { "chrisgrieser/nvim-spider", lazy = true },
+    {
+      'zbirenbaum/copilot.lua',
+      cmd = 'Copilot',
+      event = 'InsertEnter',
+      config = true,
+    },
