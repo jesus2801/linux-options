@@ -4,3 +4,4 @@
 vim.g.mapleader = ","
 vim.g.lazyvim_python_lsp = "pyright"
 vim.g.lazyvim_python_ruff = ""
+vim.opt.clipboard = "unnamedplus"

@@ -1,17 +1,17 @@
 # C++ utilities
 alias compile="~/linux-options/terminal/cpp/compile"
 alias nf="~/linux-options/terminal/cpp/cpp_template"
+alias cgo="~/linux-options/terminal/go/compile.sh"
 
 # useful aliases
 alias py="python3"
 alias ..="cd .."
 alias c="clear"
-alias o="nautilus . &"
-alias enable_wifi="nmcli radio wifi on"
-alias disable_wifi="nmcli radio wifi off"
-alias t="task report1"
+#alias o="nautilus . &"
+#alias enable_wifi="nmcli radio wifi on"
+#alias disable_wifi="nmcli radio wifi off"
+#alias t="task report1"
 
 # nvim PATH
-export PATH="/opt/nvim-linux64/bin:$PATH"
-alias nv="/opt/nvim-linux64/bin/nvim"
-
+#export PATH="/opt/nvim-linux64/bin:$PATH"
+#alias nv="/opt/nvim-linux64/bin/nvim"
